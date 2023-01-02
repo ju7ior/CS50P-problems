@@ -1,5 +1,7 @@
-# take user input with prompt with a new line at the end
-# for better looking input
-str = input("Say something.\n")
-#print input as a string
-print(str.lower())
+# Take user's input and print it lower case.
+
+# Take user input with prompt
+# New line for better looking input.
+string = input("Say something.\n")
+# Print input as a string
+print(string.lower())
