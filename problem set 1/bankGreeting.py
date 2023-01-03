@@ -2,10 +2,12 @@
 # If user input starts with a h print $20
 # if user input is not Hello  and doesn't  with a H print $100
 
+# Define main function
 def main(greeting):
-    if greeting[0:5].lower() == 'hello':
+    greeting.lower()
+    if greeting.startswith('hello'):
         print('$0')
-    elif greeting[0].lower() == 'h' : 
+    elif greeting.startswith('h'): 
         print('$20')
     else:
         print('$100')

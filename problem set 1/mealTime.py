@@ -1,3 +1,5 @@
+# Program that tells if it is time to eat a meal 
+# according to what time the user inputs (##:## format expected)
 def main():
     time = input('What is the time?: ')
     converted = convert(time)
@@ -9,11 +11,12 @@ def main():
         print('Dinner time.')
     else:
         print("It isn't time to eat.")
-
+# Define function that converts time from the user format
+# into a float for comparison operations
 def convert(time):
     hour, minute =  (time.split(':'))
     minutes = float(minute) / 60
     return float(hour) + minutes
-
+# Run function
 if __name__ == "__main__":
     main()
