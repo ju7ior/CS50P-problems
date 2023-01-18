@@ -4,6 +4,7 @@
 #If, though, 1% or less remains, output E instead to indicate that the tank is essentially empty.
 #And if 99% or more remains, output F instead to indicate that the tank is essentially full.
 def main():
+    # Call getPercent function and calculate what the output should be
     pct = getPercent()
     if pct <= 1:
         print("E")
@@ -16,7 +17,9 @@ def main():
 def getPercent():
     while True:
         try:
+            # Ask user for fraction
             fraction = input("Fraction:(x/y) ")
+            # Turn fraction input to integers so it can be used in calculations
             x, y = fraction.split('/')
             x, y = int(x), int(y)
             if x > y:
